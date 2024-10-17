@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Button } from '../button';
 
 function Header() {
   return (
-    <div className='pt-3 shadow-sm '>
-      <img src="/logo.svg" alt="logo" className='custom-logo' />
-    </div>
-  )
+    <>
+    <div className='p-2 shadow-sm flex justify-between items-center px-5'>
+        <img src="/logo.svg" alt="logo" />
+        <span style={{ marginLeft: '10px', fontSize: '18px', fontWeight: 'bold' }}>RoamRight</span>
+      </div>
+      <Button>Sign In</Button>
+    </>
+  );
 }
-
-export default Header
+export default Header;
